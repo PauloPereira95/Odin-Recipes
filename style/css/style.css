@@ -38,44 +38,32 @@ div ul a {
     margin-left: auto;
     margin-right: auto;
 }
-
-.listaRec a:hover {
-    color: #a07637ec;
+.container .listaRec{ /*tira as bolas e define como display flex*/
+    list-style: none;
+    display: flex;
+    margin-left: -20px;
 }
+.container .listaRec li a {
+    display: block;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+    position: relative; /*descobrir  explicação!!!!!*/
 
-.listaRec li a::after {
+}
+.container .listaRec li a::after{ /* Animação da linha quando o cursor esta por cima*/
     content: '';
     position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    width: 0;
-    height: 0.2rem;
-    background: #a07637ec;
-    transition: all 300ms ease-in-out;
-
-}
-
-.listaRec li a:hover::after {
-    left: 12%;
-    width: 25%;
-
-}
-
-/*
-.menu ul li a::after{  Animação da linha quando o cursor esta por cima
-    content: '';
-    position: absolute;
-    bottom: 1rem;
+    bottom: 10px;
     left:50%;
     width: 0;
-    height: 0.2rem;
-    background: var(--secondary-color);
+    height: 2px;
+    background: #ffbb55ec;
     transition: all 300ms ease-in-out;
 
 }
-.menu ul li a:hover::after{
+.container .listaRec li a:hover::after{
     left: 25%;
     width: 50%;
     
 }
-*/
