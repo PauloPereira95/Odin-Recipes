@@ -1,4 +1,7 @@
-html {
+*{
+    box-sizing: border-box ;
+}
+.body {
     background: #f3eae8;
 }
 
@@ -37,6 +40,9 @@ div ul a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.body .tituloSec{
+    margin-top: 20px;
 }
 .container .listaRec{ /*tira as bolas e define como display flex*/
     list-style: none;
